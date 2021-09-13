@@ -1,5 +1,6 @@
 package com.leetcode;
 
+import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +17,7 @@ public class BinaryTreeInorderTraversal {
     }
 
     /**
-     * 平衡二叉树中序遍历
-     * 左-中-右
+     * 平衡二叉树遍历
      * @param root
      * @return
      */
@@ -31,6 +31,11 @@ public class BinaryTreeInorderTraversal {
         return result;
     }
 
+    /**
+     * 二叉树中序遍历
+     * @param root
+     * @param result
+     */
     public static void nodeIterator(TreeNode root , List<Integer> result){
         if(root == null){
             return;
