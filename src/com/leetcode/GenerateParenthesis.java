@@ -16,24 +16,9 @@ public class GenerateParenthesis {
 
 
     public List<String> generateParenthesis(int n) {
-//        generate(0 , 2*n , "");
         List<String> res = new ArrayList<>();
         generateParenthe(0 , 0 , n , "" , res);
         return res;
-    }
-
-    private void generate(int leven, int max, String str) {
-
-        if(leven >= max){
-            System.out.println(str);
-            return;
-        }
-
-        String s1 = str + "(";
-        String s2 = str + ")";
-
-        generate(leven+1, max, s1);
-        generate(leven+1, max, s2);
     }
 
     private void generateParenthe(int left , int right, int number, String str , List<String> result) {
@@ -54,17 +39,5 @@ public class GenerateParenthesis {
 
 
     }
-
-    public void addParenthesis(int left  , int right , List<String>  result){
-
-    }
-
-
-
-
-
-
-
-
 
 }
